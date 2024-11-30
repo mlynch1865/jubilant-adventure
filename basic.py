@@ -6,7 +6,7 @@ def add(a,b):
         a = int(a)
         b = int(b)
         return a + b
-    except TypeError:
+    except ValueError:
         print("Must enter two numbers.")
         return None
 
@@ -18,7 +18,7 @@ def subtract(a,b):
         a = int(a)
         b = int(b)
         return a - b
-    except TypeError:
+    except ValueError:
         print("Must enter two numbers.")
         return None
 
@@ -30,7 +30,7 @@ def multiply(a,b):
         a = int(a)
         b = int(b)
         return a * b
-    except TypeError:
+    except ValueError:
         print("Must enter two numbers.")
         return None
 
@@ -42,7 +42,7 @@ def divide(a,b):
         a = int(a)
         b = int(b)
         return a / b
-    except TypeError:
+    except ValueError:
         print("Must enter two numbers.")
         return None
     except ZeroDivisionError:
